@@ -2,6 +2,11 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 
 gem 'rails', '4.0.4'
+gem 'bootstrap-sass', '2.3.2.0'
+
+# we need to specify the version otherwise there will be an error for the customer.css.scss file.  
+# The reason is that the system may use a higher version, which is incompatible. 
+gem 'sprockets', '2.11.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
